@@ -9,7 +9,7 @@ def latlong_to_radians(lat, long):
     return [radians(lat), radians(long)]
 
 # Create an SQLAlchemy engine for the database connection
-engine = create_engine('mysql+mysqlconnector://root:***REMOVED***@localhost/project_311')
+engine = create_engine('mysql+mysqlconnector://root:*@localhost/project_311')
 
 # List of SR TYPES to process
 sr_types = ['Air Pollution', 'Fire Hydrant', 'Flooding', 'Junk Motor Vehicle', 
