@@ -1,41 +1,46 @@
-# Alteryx Workflow for 311 Service Requests Analysis
+# Alteryx Workflow for Houston 311 Service Requests Analysis
 
 ## Overview
 
-This Alteryx workflow is designed to import, process, and analyze 311 service requests data. The workflow includes several nodes that handle data importing, filtering, and exporting tasks. It is tailored to work with large datasets, ensuring efficient data management and analysis.
+This Alteryx workflow processes and analyzes 311 service requests data from the City of Houston. It is designed to import data from the city's official website, apply necessary data transformations and filters, and then save the processed data to a local MySQL server, with each year's data stored in a separate but uniformly designed table.
+
+## Data Source
+
+The raw data for this workflow is sourced from the City of Houston's 311 service request portal, which can be accessed [here](https://www.houstontx.gov/311/). This data is comprehensive and includes various service request types submitted by the residents of Houston.
 
 ## Workflow Description
 
-The workflow is structured as follows:
+The workflow follows these main steps:
 
 1. **Data Importing**: 
-   - The workflow starts with importing data from a specified CSV file. This step involves reading the data, ensuring correct formats, and preparing it for subsequent processing.
+   - Imports data from the Houston 311 service request CSV files. The workflow is configured to handle files from different years, accommodating format changes that occurred mid-year in 2021.
 
 2. **Data Processing and Filtering**:
-   - The workflow includes multiple filtering nodes, which clean and refine the data. These nodes remove null values, and filter records based on specific criteria like location coordinates and department divisions.
-   - Regex functions are applied to process and format certain data fields.
+   - Applies filters to clean and refine the data. This includes removing null values and selecting relevant fields based on specific criteria.
+   - Regex functions are used to ensure data consistency, especially considering the format change in 2021.
 
 3. **Data Exporting**:
-   - The final step of the workflow is exporting the processed data. The data is saved in a specific format, ready for further analysis or reporting.
+   - Exports the processed data to a local MySQL server. Each year's data is saved in a distinct table, but all tables maintain a uniform structure for ease of use and consistency.
 
 ## Key Components
 
-- **Tool Containers**: The workflow is organized into different tool containers, each labeled according to the function it performs (e.g., 'Data Importing', 'Data Processing').
-- **Filter Tools**: These tools apply various conditions to the data, ensuring that only relevant and correctly formatted data passes through the workflow.
-- **Database File Input and Output Tools**: These tools handle the reading of input data from CSV files and writing the output to a specified database or file format.
-- **Browse Tools**: They are used for data inspection and profiling at different stages of the workflow.
-- **Union Tool**: This tool combines data from different streams, ensuring a cohesive data set is available for final output.
-- **Custom Actions**: The workflow includes custom actions for dynamic data handling based on specific conditions or user inputs.
+- **Tool Containers**: Organized into different sections for importing, processing, and exporting data.
+- **Filter Tools**: Utilized to ensure data quality and relevance.
+- **Database Tools**: Handle data interaction with the local MySQL server, ensuring each year's data is stored in separate, uniform tables.
+- **Browse Tools**: Used for inspecting the data at various stages.
 
 ## Usage
 
-To use this workflow, users should have access to Alteryx Designer and the required input data in a CSV format. After loading the workflow, users can execute it to process the 311 service requests data according to the defined steps.
+To use this workflow:
+1. Access the Houston 311 service request data from the provided URL and download the necessary CSV files.
+2. Execute the workflow in Alteryx Designer, which will process and save the data to your local MySQL server, categorizing it by year.
 
 ## Requirements
 
 - Alteryx Designer
-- Access to the 311 service requests data in CSV format
+- Access to the Houston 311 service requests data
+- A local MySQL server setup
 
 ## Conclusion
 
-This Alteryx workflow provides an automated and efficient solution for processing large datasets of 311 service requests. Its structured approach to data import, filtering, and export makes it a valuable tool for
+This Alteryx workflow provides an efficient solution for handling, processing, and storing large datasets of 311 service requests from the City of Houston. Its ability to adapt to data format changes and store data in a structured manner makes it a valuable asset for data analysts and urban planners.
