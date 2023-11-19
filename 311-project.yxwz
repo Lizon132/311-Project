@@ -1,0 +1,1157 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="306" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Select only the columns that you wish to import</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1229" y="17" width="1393" height="852" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Processing</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data Processing</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1518" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>not IsNull([SR LOCATION])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>not IsNull([SR LOCATION])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1878" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_510b37323638bd4787407d414e0fa499~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1638" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_ec10f8579347224081b6331bc06329b6~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1878" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>NOT(IsNull([LATITUDE])) OR
+NOT(IsNull([LONGITUDE]))</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>NOT(IsNull([LATITUDE])) OR
+NOT(IsNull([LONGITUDE]))</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2286" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_1458bf163d96734ea4623dbd50ce2205~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1974" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_8641d7f341c91248b308ccabf3165da7~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1638" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_d695217a71673a4f82afc1a0e7975db4~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="2334" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2502" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_f0236bb6e7788844a1d767a0cf196a43~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2238" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[QUEUE] = "DefectiveCase" OR
+[DIVISION] = "Collections" OR 
+[DIVISION] = "Legal"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[QUEUE] = "DefectiveCase" OR
+[DIVISION] = "Collections" OR 
+[DIVISION] = "Legal"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2418" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_612b152b75ee8a4b8c964d36e6227a27~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2430" y="714" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_e32ec77be9e77b4dbc5d70a2b9c719bf~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1254" y="305" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression><![CDATA[REGEX_Replace(ToString([SR LOCATION]), '[^\d]+', '') != ''
+]]></Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[REGEX_Replace(ToString([SR LOCATION]), '[^\d]+', '') != ''
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1374" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_009d9e023a05984f9757620732d01739~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="2502" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Table>year2023</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Overwrite</OutputOption>
+                <Connection DcmType="ConnectionId">ffce313f-00fb-409e-b2d8-ff71a0ebd403</Connection>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:default — detault
+Table=year2023</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+            <Position x="2190" y="66" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Text Box (94)</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="2334" y="78" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Value</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="725" y="425" width="152" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 98</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="750" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Case Number" selected="True" rename="CASE NUMBER" />
+                <SelectField field="Incident Address" selected="True" rename="SR LOCATION" />
+                <SelectField field="LATITUDE" selected="True" type="Double" size="8" />
+                <SelectField field="LONGITUDE" selected="True" type="Double" size="8" />
+                <SelectField field="Created Date Local" selected="True" rename="SR CREATE DATE" />
+                <SelectField field="Department" selected="True" rename="DEPARTMENT" />
+                <SelectField field="Division" selected="True" rename="DIVISION" />
+                <SelectField field="AVA Case Type" selected="True" rename="SR TYPE" />
+                <SelectField field="Queue" selected="True" rename="QUEUE" />
+                <SelectField field="SR CREATE DATE" selected="False" type="Date" size="10" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="Latitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="Double" />
+                <Field name="SR CREATE DATE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2022-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="671" y="43" width="361" height="157" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 97</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="696" y="116" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Case Number" selected="True" rename="CASE NUMBER" />
+                <SelectField field="SR LOCATION" selected="True" />
+                <SelectField field="Department" selected="True" rename="DEPARTMENT" />
+                <SelectField field="Division" selected="True" rename="DIVISION" />
+                <SelectField field="SR TYPE" selected="True" />
+                <SelectField field="Queue" selected="True" rename="QUEUE" />
+                <SelectField field="SR CREATE DATE" selected="True" type="V_String" size="2147483647" />
+                <SelectField field="LATITUDE" selected="True" type="Double" size="8" />
+                <SelectField field="LONGITUDE" selected="True" type="Double" size="8" />
+                <SelectField field="Incident Address" selected="False" rename="SR LOCATION" />
+                <SelectField field="Created Date Local" selected="False" rename="SR CREATE DATE" />
+                <SelectField field="AVA Case Type" selected="False" rename="SR TYPE" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CASE NUMBER" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2020-clean.csv" type="V_WString" />
+                <Field name="SR LOCATION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2020-clean.csv" type="V_WString" />
+                <Field name="DEPARTMENT" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2020-clean.csv" type="V_WString" />
+                <Field name="DIVISION" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2020-clean.csv" type="V_WString" />
+                <Field name="SR TYPE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2020-clean.csv" type="V_WString" />
+                <Field name="QUEUE" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2020-clean.csv" type="V_WString" />
+                <Field name="SR CREATE DATE" size="2147483647" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2020-clean.csv" type="V_String" />
+                <Field name="LATITUDE" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2020-clean.csv" type="Double" />
+                <Field name="LONGITUDE" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2020-clean.csv" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="948" y="92" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_23568_bccf9f9572b4be4c8982b1fafa5f451e_\Engine_23568_2124165486438e48b186c3c53a3d1a7b~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="54" width="336" height="627" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Importing</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data Importing</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="78" y="572" width="216" height="84" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Import the Data. If the Data is the formatted dump with the header from 311 you have to remove the first 6 lines until you get to the data. If you import the piped data you only need ot skip the 1 header line. ]]></Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="198" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>0</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28592</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>311-Public-Data-Extract-2023-clean.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Case Number" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Incident Address" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Latitude" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Longitude" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Status" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Created Date Local" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Closed Date" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Title" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Incident Case Type" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="SLA Time" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Resolve By Time" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Service Area" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Council District" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Key Map" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Department" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Division" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="AVA Case Type" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="State Code" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="State Code Name" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="SLA Start Time" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="X" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Y" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Incident Street" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Incident City" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Incident State" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="TaxID" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Created Date UTC" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Customer SuperNeighborhood" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Management District" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Garbage Route" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Garbage Day" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="SWM Quadrant" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Recycling Route" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Recycling Day" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Recycling Quadrant" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Recycling Areas" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Heavy Trash Day" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Heavy Trash Quadrant" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Queue" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="ETJ" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="SLA Name" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Channel" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Extract Date" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Latest Case Notes" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Sample Case Confilcts Notes" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Description" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+                <Field name="Resolution Notes" size="254" source="File: C:\Users\chris\Documents\311 Project\311-Public-Data-Extract-2023-clean.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FileBrowse.FileBrowse">
+            <Position x="174" y="103" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>File Browse (64)</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="187" y="248" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Update Value</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="306" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\chris\AppData\Local\Temp\Engine_31264_dfc219a146ebd043afb8393caadaf018_\Engine_31264_3dcbfb403ffb234ea7660a70dee639bd~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="50" Connection="True" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="False" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="True" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="True" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="False" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="55" Connection="True" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="47" Connection="True" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="False" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="95" Connection="Action" />
+      <Destination ToolID="93" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="True" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="False" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="True" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="False" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="False" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="94" Connection="Question" />
+      <Destination ToolID="95" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="64" Connection="Question" />
+      <Destination ToolID="65" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="65" Connection="Action" />
+      <Destination ToolID="54" Connection="Action" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>File Browse (64)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (94)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>311-project</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="0e3497d9-7864-41a8-a0e5-cde7d49090a6" />
+      <Telemetry>
+        <PreviousWorkflowId value="d15aaf9b-d9af-4ba5-bbf7-95187f73799f" />
+        <OriginWorkflowId value="2ce0174c-08f0-4fb1-b5a1-2376799585a6" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="65" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>54/File</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="95" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>93/FormatSpecificOptions/Table</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (23)</Name>
+          <ToolId value="23" />
+          <Questions>
+            <Question>
+              <Type>FileBrowse</Type>
+              <Description>Import File</Description>
+              <Name>File Browse (64)</Name>
+              <ToolId value="64" />
+              <SaveAs value="False" />
+              <Mode>FileSpec</Mode>
+              <FileSpec>CSV Files (*.csv)|*.csv|Text Files (*.txt)|*.txt|All Files (*.*)|*.*</FileSpec>
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Database Name</Description>
+              <Name>Text Box (94)</Name>
+              <ToolId value="94" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="61" Selected="False" />
+        <Tool ToolId="62" Selected="False" />
+        <Tool ToolId="46" Selected="False" />
+        <Tool ToolId="48" Selected="False" />
+        <Tool ToolId="49" Selected="False" />
+        <Tool ToolId="51" Selected="False" />
+        <Tool ToolId="52" Selected="False" />
+        <Tool ToolId="59" Selected="False" />
+        <Tool ToolId="56" Selected="False" />
+        <Tool ToolId="57" Selected="False" />
+        <Tool ToolId="93" Selected="True" />
+        <Tool ToolId="71" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
