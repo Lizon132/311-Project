@@ -40,8 +40,4 @@ This dashboard is for educational purposes and demonstrates the capabilities of 
 
 ## Feedback
 
-For suggestions or issues, please contact [Christopher Aguirre's GitHub](https://github.com/christopheraguirre).
-
----
-
-**Note**: The GitHub link is a placeholder and should be replaced with the actual URL to the project repository on GitHub.
+For suggestions or issues, please contact [Christopher Aguirre's GitHub](https://github.com/Lizon132).
